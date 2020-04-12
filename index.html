@@ -9,13 +9,11 @@
 
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" style="display:block" />
 
 <!-- Change this code here by copy and pasting your template on line 15 -->
 <p>Welcome to your first GitHub Pages website!</p>
-<?php 
-echo "Hallo Thageet";
-?>
+
   <button type="button" onClick="Katzewegzaubern()">Hallo Thageet, klicke mich um die Katze verschwinden zu lassen.</button>
   <div id="Katzekomm" style="display:none">
     <p>Du kannst sie auch zurück holen</p>
@@ -23,11 +21,11 @@ echo "Hallo Thageet";
   </div>
   <script>
     function Katzewegzaubern(){
-    document.getElementById("octocat").src="";
+    document.getElementById("octocat").style.display="none";
     document.getElementById("Katzekomm").style.display="block";
     }
     function Katzeherzaubern() {
-    document.getElementById("octocat").src="https://octodex.github.com/images/daftpunktocat-thomas.gif";
+    document.getElementById("octocat").style.display="block";
     }
 </body>
 </html>
